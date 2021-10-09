@@ -4,7 +4,7 @@ node {
         checkout scm    
     }     
     stage('Build image') {         
-        app = docker.build()    
+        app = docker.build("bankaccount:${env.BUILD_ID}")    
     }     
     stage('Push image') {
         app.push()          
