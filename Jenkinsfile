@@ -8,6 +8,8 @@ node {
         app = docker.build("bankaccount:${env.BUILD_ID}")    
     }     
     stage('Push image') {
-        app.push()          
+        docker.withRegistry('barrezuetai/bankaccount', 'credentials-id') {
+        app.push()
+    }        
     }
 }
