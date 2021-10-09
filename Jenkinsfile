@@ -5,11 +5,11 @@ node {
     }     
     stage('Build image') {     
         sh 'echo This is the current user ${USER}'    
-        app = docker.build("bankaccount:${env.BUILD_ID}")    
+        app = docker.build("barrezuetai/bankaccount:${env.BUILD_ID}")    
     }     
     stage('Push image') {
         docker.withRegistry('https://registry.hub.docker.com', 'credentials-id') {
-        app.push()
+        app.push("barrezuetai/bankaccount")
     }        
     }
 }
