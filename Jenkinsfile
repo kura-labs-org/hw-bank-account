@@ -9,7 +9,7 @@ node {
     }     
     stage('Push image') {
         docker.withRegistry('https://registry.hub.docker.com', 'credentials-id') {
-        app.push("barrezuetai/bankaccount")
+        app.push("latest")
     }        
     }
 }
