@@ -1,3 +1,8 @@
 # hw-bank-account
 
-Submit your Bank Account class here. It should be submitted as a python file. 
+A python program that simulates the functions of a bank acccount
+
+**features include:**
+Withdrawl of funds
+Deposit of funds
+Traanfer of funds
