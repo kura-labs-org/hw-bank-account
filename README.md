@@ -1,3 +1,4 @@
-# hw-bank-account
+# Bank Account Homework
 
-Submit your Bank Account class here. It should be submitted as a python file. 
+Practice in Python.<br>
+Bank Account python class.
